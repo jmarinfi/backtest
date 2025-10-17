@@ -15,21 +15,21 @@ class RateLimitInterval(str, Enum):
 
 
 class KlineInterval(str, Enum):
-    ONE_MINUTE = "1m"
-    THREE_MINUTES = "3m"
-    FIVE_MINUTES = "5m"
-    FIFTEEN_MINUTES = "15m"
-    THIRTY_MINUTES = "30m"
-    ONE_HOUR = "1h"
-    TWO_HOURS = "2h"
-    FOUR_HOURS = "4h"
-    SIX_HOURS = "6h"
-    EIGHT_HOURS = "8h"
-    TWELVE_HOURS = "12h"
-    ONE_DAY = "1d"
-    THREE_DAYS = "3d"
-    ONE_WEEK = "1w"
-    ONE_MONTH = "1M"
+    ONE_MINUTE = "ONE_MINUTE"
+    THREE_MINUTES = "THREE_MINUTES"
+    FIVE_MINUTES = "FIVE_MINUTES"
+    FIFTEEN_MINUTES = "FIFTEEN_MINUTES"
+    THIRTY_MINUTES = "THIRTY_MINUTES"
+    ONE_HOUR = "ONE_HOUR"
+    TWO_HOURS = "TWO_HOURS"
+    FOUR_HOURS = "FOUR_HOURS"
+    SIX_HOURS = "SIX_HOURS"
+    EIGHT_HOURS = "EIGHT_HOURS"
+    TWELVE_HOURS = "TWELVE_HOURS"
+    ONE_DAY = "ONE_DAY"
+    THREE_DAYS = "THREE_DAYS"
+    ONE_WEEK = "ONE_WEEK"
+    ONE_MONTH = "ONE_MONTH"
 
 
 class RateLimit(BaseModel):
@@ -75,15 +75,15 @@ class ExchangeInfo(BaseModel):
 
 
 class Candlestick(BaseModel):
-    open_time: int
+    openTime: int
     open: str
     high: str
     low: str
     close: str
     volume: str
-    close_time: int
-    quote_asset_volume: str
-    number_of_trades: int
-    taker_buy_base_asset_volume: str
-    taker_buy_quote_asset_volume: str
+    closeTime: int
+    quoteAssetVolume: str
+    numberOfTrades: int
+    takerBuyBaseAssetVolume: str
+    takerBuyQuoteAssetVolume: str
     ignore: str
