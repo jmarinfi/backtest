@@ -8,7 +8,7 @@ class RateLimitType(str, Enum):
     RAW_REQUESTS = "RAW_REQUESTS"
 
 
-class Interval(str, Enum):
+class RateLimitInterval(str, Enum):
     SECOND = "SECOND"
     MINUTE = "MINUTE"
     DAY = "DAY"
@@ -34,7 +34,7 @@ class KlineInterval(str, Enum):
 
 class RateLimit(BaseModel):
     rateLimitType: RateLimitType
-    interval: Interval
+    interval: RateLimitInterval
     intervalNum: int
     limit: int
 
