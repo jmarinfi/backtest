@@ -72,3 +72,18 @@ class ExchangeInfo(BaseModel):
     rateLimits: list[RateLimit]
     exchangeFilters: list[dict[str, str]]
     symbols: list[SymbolInfo]
+
+
+class Candlestick(BaseModel):
+    open_time: int
+    open: str
+    high: str
+    low: str
+    close: str
+    volume: str
+    close_time: int
+    quote_asset_volume: str
+    number_of_trades: int
+    taker_buy_base_asset_volume: str
+    taker_buy_quote_asset_volume: str
+    ignore: str
